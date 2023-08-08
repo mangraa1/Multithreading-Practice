@@ -16,8 +16,7 @@ import UIKit
 // 1Main(UI) -----
 // 2Thread     -
 
-
-//Unix - POSIX
+//MARK: - Unix - POSIX
 
 var thread = pthread_t(bitPattern: 0) // Create thread
 var attribut = pthread_attr_t()
@@ -28,7 +27,7 @@ pthread_create(&thread, &attribut, { pointer in
     return nil
 }, nil)
 
-// Thread
+//MARK: - Thread
 
 var nsthread = Thread  {
     print("test2")
